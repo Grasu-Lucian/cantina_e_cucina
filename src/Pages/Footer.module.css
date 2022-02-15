@@ -1,0 +1,14 @@
+.container{
+    background-color: black;
+}
+.container footer{
+    color:white;
+    padding-bottom: 40px;
+    padding-top:40px ;
+    text-align: center;
+    padding: 10%;
+}
+.image_container{
+    background-color: rgb(39, 39, 39);
+    text-align: center;
+}

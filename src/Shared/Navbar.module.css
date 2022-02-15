@@ -1,0 +1,238 @@
+.navbar {
+  top:0;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+  background-color: #fef8e9;
+  height: 172px;
+  display: flex;
+  border-bottom: 2px solid black;
+  -webkit-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.71);
+  box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.71);
+}
+.whole_navbar{
+  z-index: 20;
+  position: fixed;
+  width: 100%;
+}
+.container {
+  display: flex;
+}
+.navbar ul {
+  padding: 0;
+  list-style: none;
+  justify-content: flex-end;
+  padding-right: 5vw;
+}
+.navbar li button {
+  letter-spacing: -3px;
+}
+.navbar ul li button {
+  background-color: transparent;
+  font-family: "Supermercado One", cursive;
+  padding: 3px;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  border: transparent 3px solid;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+.navbar ul li button:active {
+  border: #512134 3px solid;
+  color: #512134;
+}
+.navbar ul li button:hover {
+  border: #9d2234 3px solid;
+  color: #9d2234;
+}
+.navbar img {
+  padding: 20px;
+  position: relative;
+  z-index: 80;
+  height: 108.46px;
+  width: 108.46px;
+}
+.navigation {
+  float: right;
+  margin-top: 30px;
+  width: 66%;
+}
+ul {
+  display: grid;
+  grid-template-columns: 15% 11% 17% 5% 16% 20%;
+  grid-column-gap: 5px;
+}
+span {
+  color: transparent;
+}
+.nav_element1 {
+  grid-column: 2;
+}
+.nav_element2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+.nav_element3 {
+  grid-row: 1;
+  grid-column-start: 5;
+}
+.nav_element4 {
+  grid-row: 1;
+  grid-column: 6;
+}
+.nav_element5 {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row: 2;
+}
+.nav_element6 {
+  grid-column: 6;
+  grid-row: 2;
+}
+.navbar a {
+  margin-top: 50px;
+  margin-left: -50px;
+
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 550;
+  width: 75%;
+}
+.navigation2 {
+  display: none;
+}
+.nav_options {
+  display: none;
+}
+@media screen and (max-width: 1195px) {
+  ul {
+    display: grid;
+    grid-template-columns: 15% 5% 13% 5% 18% 20%;
+    grid-column-gap: 5px;
+  }
+  span {
+    color: transparent;
+  }
+  .nav_element1 {
+    grid-column: 3;
+  }
+
+  .nav_element2 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+  }
+  .nav_element3 {
+    grid-row: 1;
+    grid-column-start: 6;
+  }
+  .nav_element4 {
+    grid-row: 2;
+    grid-column-start: 2;
+  }
+  .nav_element5 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row: 2;
+  }
+  .nav_element6 {
+    grid-column: 6;
+    grid-row: 2;
+  }
+}
+@media screen and (max-width: 950px) {
+  .navbar {
+    justify-content: space-between;
+    height: 75px;
+  }
+  .navbar img {
+    width: 90px;
+    height: 90px;
+  }
+  .navigation {
+    width: 0%;
+    display: none;
+  }
+
+  .navigation2 {
+    display: flex;
+    background: #512134;
+    color: white;
+    font-size: 2rem;
+    margin-top: 12px;
+    margin-right: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out 0.25s;
+    cursor: pointer;
+    outline: none;
+    border: none;
+  }
+  .navigation2:hover {
+    background: white;
+    color: #512134;
+  }
+  .navbar a {
+    display: none;
+  }
+  .nav_options {
+    opacity: 1;
+  height: 500px;
+    display: flex;
+    flex-direction: column;
+    height: 0;
+ 
+    transition: 0.25s ease-in-out;
+  }
+  .nav_options button ,  .nav_options button  a {
+    position: relative;
+   z-index:10;
+    font-size: 1.4rem;
+    font-family: "Supermercado One", cursive;
+    background: white;
+    color: #54595F;
+    outline: none;
+    border: none;
+    transition: ease-in-out 0.25s;
+    cursor: pointer;
+    padding: 4px;
+    text-decoration: none;
+  }
+  .nav_options button  a{
+    background-color: transparent;
+    padding-left: auto;
+  }
+  .nav_options button:hover{
+    background-color: #54595F;
+    color:white;
+  }
+  .nav_options button:hover > a{
+    color:white;
+  }
+  .nav_options button a:hover{
+    background-color: transparentd;
+  }
+  .nothing {
+    opacity: 0;
+    flex-direction: column;
+    transition: 0.25s ease-in-out;
+  }
+  .nothing button {
+    background: white;
+    color: #54595F;
+    outline: none;
+    border: none;
+    font-size: 1.4rem;
+    font-family: "Supermercado One", cursive;
+    cursor: pointer;
+    padding: 4px;
+  }
+}
+.special{
+  border-bottom: 2px solid black;
+  -webkit-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.71);
+  box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.71);
+}

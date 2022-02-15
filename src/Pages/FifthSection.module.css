@@ -1,0 +1,118 @@
+.menu{
+    position: absolute;
+    margin-top: -175px;
+}
+.name{
+    position: absolute;
+    margin-top: -175px;
+}
+.container {
+    width: 100%;
+  position: relative;
+  color: white;
+  display: flex;
+}
+.context{
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    
+}
+.title{
+    font-size: 3rem;
+    border-bottom: 3px solid white;
+    z-index: 2;
+   
+}
+
+.context p{
+    font-size: 1.2rem;
+line-height: 30px;
+z-index: 2;
+
+}
+.grid{
+height: 600px;
+    width: 100%;
+    padding-top:100px;
+    background: rgb(173, 78, 93);
+    padding-bottom: 100px;
+}
+.context img{
+    display: none;
+    
+}
+.menu {width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+padding:10px;
+padding-top: 100px;
+
+  grid-row-gap: 10px;
+}
+.menu img {
+  width: 100%;
+transition: 0.25s ease-in-out;
+  cursor: pointer;
+}
+.menu img:hover{
+    filter: brightness(0.75);
+}
+@media screen and (max-width: 950px){
+ .name{
+    margin-top: -475px;
+
+ }
+    .container{
+        display: flex;
+        flex-direction: column;
+        top:-500px;
+    }
+    .sizer{
+        height: 200px;
+        overflow: hidden;
+    }
+    .sizer img{
+        display: flex;
+        position: absolute;
+        width:100%;
+        height: 500px;
+      z-index: -2;
+    }
+    .context{
+        margin-top: -100px;
+        margin-left: -100px;
+        width: 70%;
+        padding:100px;
+    }
+    .grid{
+        height: 195vw;
+    }
+    .menu{
+        height: 800px;
+        width: 97%;
+        grid-template-columns: 1fr 1fr ;
+    }
+    .title{
+        margin-left: 100px;
+    }
+    .context p{
+        margin-left: 100px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .context{
+        padding-left:0px;
+        margin-left: 0;
+        width: 80%;
+    }
+    .grid{
+        height: 675.3909224011713vw;
+        margin-top: -75px;
+    }
+    .menu{
+        grid-template-columns: 1fr;
+    }
+}

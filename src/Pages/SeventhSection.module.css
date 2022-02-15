@@ -1,0 +1,96 @@
+.container{
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px;
+}
+.name{
+    position: absolute;
+    margin-top: -175px;
+}
+.medium_container{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    border-bottom: 3px solid white;
+font-size: 3rem;
+width: 85%;
+}
+.title span{
+    opacity: 1;
+    color: white;
+    font-size: 4rem;
+}
+.subtitle{
+    font-size: 2rem;
+}
+.text{
+    font-weight: normal;
+}
+.container button{
+    text-align: start;
+border: #61CE70 solid 2px;
+outline: none;
+cursor: pointer;
+}
+.medium_container button{
+    width: 50%;
+    padding: 2.5%;
+    background-color: #AF4B5A;
+    color: white;
+    font-size: 1.3rem;
+outline: none;
+border: none;
+transition: ease-in-out 0.25s;
+cursor: pointer;
+text-align: center;
+}
+.medium_container button:hover{
+    color:#AF4B5A;
+    background-color: whitesmoke;
+}
+
+.container a img{
+    width: 20%;
+}
+.title1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: underline ;
+}
+.star span{
+    margin-top: -3px;
+    opacity: 1;
+    font-size: 1.1rem;
+    color: #61CE70;
+    
+}
+.star{
+    display: flex;
+}
+.color{
+    color: #61CE70;
+}
+.details{
+    font-size: 1.1rem;
+}
+.recenzi span ,.other span{
+    opacity: 1;
+    color:black;
+text-decoration: underline;
+}
+.other span{
+    margin-left: 10px;
+}
+@media screen and (max-width: 950px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .container a{
+        margin-top: 50px;
+    }
+    .name{ margin-top: -77px;}
+}
